@@ -42,6 +42,7 @@ body {
 }
 
 .header-box {
+  min-width: 1200px;
   height: 100%;
   padding-left: 100px;
   box-sizing: border-box;
