@@ -1,0 +1,67 @@
+
+/* 内容区 */
+.tool-block {
+  margin-top: 24px;
+}
+
+.tool-bar {
+  display: flex;
+  align-items: center;
+}
+
+.tool-bar .bar-title {
+  font-weight: bold;
+}
+
+.tool-bar .bar-remark {
+  margin-left: 12px;
+  font-size: 12px;
+}
+
+.tool-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  margin-top: 8px;
+  width: calc(50% - 12px);
+  padding: 8px 12px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.3), 5px 5px 5px -4px rgba(0, 0, 0, 0.3);
+}
+.list-item:nth-child(even) {
+  margin-left: 24px;
+}
+.list-item .list-item-logo {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-item .list-item-logo > img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height:100%;
+}
+.list-item .list-item-name {
+  margin-left: 8px;
+  width: 120px;
+}
+.list-item:hover .list-item-name {
+  color: #2A82E4;
+}
+.list-item .list-item-desc {
+  margin-left: 8px;
+  flex: 1;
+  color: #828282;
+  font-size: 12px;
+}

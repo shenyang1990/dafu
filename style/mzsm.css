@@ -1,0 +1,26 @@
+/* 免责声明 */
+
+.page-mzsm {
+  width: 980px;
+}
+
+.page-mzsm .title {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.page-mzsm .content {
+  line-height: 1.8;
+}
+
+.page-mzsm .content strong {
+  font-weight: bold;
+}
+
+.page-mzsm .content p {
+  margin-top: 16px;
+}
