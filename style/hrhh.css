@@ -1,0 +1,146 @@
+.nav-bar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.nav-bar .link-home:hover {
+  font-weight: bold;
+}
+
+.nav-bar .guide {
+  margin: 0 12px;
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+/* 内容区 */
+.content-box {
+  height: 124px;
+  padding: 0 26px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.content-box .left .img {
+  width: 60px;
+  height: 60px;
+  background-color: #ccc;
+}
+
+.content-box .middle {
+  margin: 0 100px;
+  flex: 1;
+}
+
+.content-box .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-box .right .tel-box {
+  position: relative;
+  width: 132px;
+  height: 36px;
+  font-size: 14px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* 联系方式-悬浮层 */
+.tel-box-cover {
+  display: none;
+  position: absolute;
+  font-weight: normal;
+  z-index: 1;
+  padding: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  left: 50%;
+  top: 120%;
+  width: 184px;
+  height: 216px;
+  background-color: #fff;
+  transform: translateX(-50%);
+  text-align: center;
+  box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.3), 5px 5px 5px -4px rgba(0, 0, 0, 0.3);
+}
+
+.tel-box-cover .qrcode {
+  margin: 12px auto;
+  width: 130px;
+  height: 130px;
+}
+
+.tel-box-cover .gray {
+  color: #808080;
+}
+
+.content-box .right .tel-box:hover {
+  background-color: #E5E5E5;
+}
+
+.content-box .right .tel-box:hover .tel-box-cover {
+  display: block;
+}
+
+.content-box .right .tel-box:not(:first-child) {
+  margin-top: 6px;
+}
+
+.content-box .right .tel-box .icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/* 提示文案 */
+.tips {
+  margin-top: 20px;
+  color: #999;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.tips h4 {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 相关照片 */
+.pic-box {
+  margin-top: 80px;
+}
+
+.pic-box h4 {
+  margin-bottom: 8px;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.pic-box .pic-list {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.pic-box .pic-list .img {
+  width: 322px;
+  height: 426px;
+  border-radius: 18px;
+  background-color: #ccc;
+}
