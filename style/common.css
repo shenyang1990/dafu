@@ -1,57 +1,32 @@
 /* 全局 */
 body {
-  min-width: 1920px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  box-sizing: border-box;
   align-items: center;
   color: #000;
   font-size: 16px;
 }
 
-.container {
-  margin: 0 auto;
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 1920px;
-}
-
-.container .main {
-  width: 1200px;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.container .aside-left,
-.container .aside-right {
-  width: 360px;
-}
-
-.gray {
-  color: #828282;
-}
-
-.remark {
-  font-size: 12px;
-}
-
-.over {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 /* 顶部 */
 .header {
   position: relative;
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 88px;
   margin: 0 auto;
   box-sizing: border-box;
   border-bottom: 1px solid #E3E3E3;
+}
+
+.header-fixed {
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
 }
 
 .header-box {
@@ -61,8 +36,9 @@ body {
 }
 
 .header-left {
-  width: 360px;
+  width: 240px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -92,7 +68,6 @@ body {
 }
 
 .header-right {
-  width: 1200px;
   padding: 0 5px;
   box-sizing: border-box;
   display: flex;
@@ -209,4 +184,64 @@ body {
 
 .footer .footer-bottom .footer-bottom-item:not(:first-child) {
   margin-left: 12px;
+}
+
+
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: #000; */
+}
+
+.container .main {
+  flex: 1;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.container .aside-left,
+.container .aside-right {
+  position: relative;
+  width: 240px;
+  height: 100vh;
+}
+
+.container .ad {
+  z-index: 1;
+  position: fixed;
+  top: 88px;
+  width: 240px;
+
+  height: 600px;
+  overflow: hidden;
+}
+
+.gray {
+  color: #828282;
+}
+
+.remark {
+  font-size: 12px;
+}
+
+.over {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .container .aside-left,
+  .container .aside-right {
+    display: none;
+  }
 }
