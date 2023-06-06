@@ -80,7 +80,7 @@ body {
   }
 
   30% {
-    top: -2px;
+    top: -4px;
   }
 
   100% {
@@ -104,7 +104,6 @@ body {
 
 .header-right .nav:hover .nav-sub {
   display: block;
-  padding: 4px 0;
   box-sizing: border-box;
 }
 
@@ -140,8 +139,45 @@ body {
   width: 100%;
   border-radius: 8px;
   background-color: #fff;
-  box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.3), 5px 5px 5px -4px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.06), 5px 5px 5px -4px rgba(0, 0, 0, 0.06);
   overflow: hidden;
+}
+
+.header-right .nav-sub.cover-notice {
+  left: 50%;
+  width: 248px;
+  height: 176px;
+  padding: 12px 18px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+.header-right .nav-sub.cover-notice p {
+  line-height: 1.5;
+  margin-top: 12px;
+  text-indent: 28px;
+}
+
+.header-right .nav-sub.cover-wechat {
+  left: 50%;
+  width: 184px;
+  height: 216px;
+  padding: 12px 0;
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: center;
+  transform: translateX(-50%);
+}
+
+.header-right .nav-sub.cover-wechat .qrcode {
+  margin: 12px auto;
+  width: 130px;
+  height: 130px;
+}
+
+.header-right .nav-sub.cover-wechat .gray {
+  color: #808080;
 }
 
 .header-right .nav-sub>li {
@@ -244,4 +280,9 @@ body {
   .container .aside-right {
     display: none;
   }
+}
+
+/* fix 修复头部fixed后锚点定位不准 */
+html{
+  scroll-padding-top: 88px;
 }
