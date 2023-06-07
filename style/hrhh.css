@@ -53,7 +53,7 @@
   font-weight: bold;
   justify-content: center;
   align-items: center;
-  border-radius: 18px;
+  border-radius: 8px;
   border: 1px solid #ccc;
   cursor: pointer;
 }
@@ -141,6 +141,6 @@
 .pic-box .pic-list .img {
   width: 322px;
   height: 426px;
-  border-radius: 18px;
+  border-radius: 8px;
   background-color: #ccc;
 }
