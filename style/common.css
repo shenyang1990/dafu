@@ -247,16 +247,31 @@ body {
   align-items: center;
   color: #828282;
   font-size: 12px;
+  
+}
+
+.footer .footer-bottom .footer-bottom-item{
+  margin: 0px 10px 0px 10px;
 }
 
 .footer .footer-bottom .notice {
   color: #828282;
 }
 
+.footer .footer-bottom .notice:hover{
+  color: #2A82E4;
+}
+
+
 .footer .footer-bottom .footer-bottom-item:not(:first-child) {
   margin-left: 12px;
 }
 
+.footer .update-time {
+  color: #828282;
+  font-size: 12px;
+
+}
 
 
 .container {

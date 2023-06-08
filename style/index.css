@@ -1,7 +1,7 @@
 
 /* 内容区 */
 .tool-block {
-  margin-top: 24px;
+  margin-top: 46px;
 }
 
 .tool-bar {
@@ -16,6 +16,10 @@
 .tool-bar .bar-remark {
   margin-left: 12px;
   font-size: 12px;
+  position: relative;
+  top: 2px;
+  color: #828282;
+
 }
 
 .tool-list {
