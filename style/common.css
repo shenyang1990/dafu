@@ -208,6 +208,14 @@ body {
   text-indent: 28px;
 }
 
+.header-right .nav-sub .guide-btn {
+  cursor: pointer;
+  font-weight: bold;
+}
+.header-right .nav-sub .guide-btn:hover {
+  color: #2A82E4
+}
+
 .header-right .nav-sub.cover-wechat {
   left: 50%;
   width: 184px;
@@ -247,10 +255,10 @@ body {
   align-items: center;
   color: #828282;
   font-size: 12px;
-  
+
 }
 
-.footer .footer-bottom .footer-bottom-item{
+.footer .footer-bottom .footer-bottom-item {
   margin: 0px 10px 0px 10px;
 }
 
@@ -258,7 +266,7 @@ body {
   color: #828282;
 }
 
-.footer .footer-bottom .notice:hover{
+.footer .footer-bottom .notice:hover {
   color: #2A82E4;
 }
 
@@ -283,7 +291,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  /* background-color: #000; */
 }
 
 .container .main {
