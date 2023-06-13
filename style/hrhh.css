@@ -120,6 +120,17 @@
   font-weight: bold;
 }
 
+.tips .tips-link {
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tips .tips-link:hover {
+  color: #2A82E4;
+}
+
+
 /* 相关照片 */
 .pic-box {
   margin-top: 80px;
@@ -134,12 +145,18 @@
 
 .pic-box .pic-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
 }
 
 .pic-box .pic-list .img {
-  width: 322px;
-  height: 426px;
+  /* width: 322px; */
+  max-width: 33%;
+  flex: 1;
+  /* height: 426px; */
   border-radius: 8px;
+}
+
+.pic-box .pic-list .img:not(:first-child) {
+  margin-left: 8px;
 }
