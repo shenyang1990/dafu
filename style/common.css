@@ -118,11 +118,11 @@ body {
 }
 
 .header-right .nav:not(:first-child) {
-  margin-left: 12px;
+  margin-left: 15px;
 }
 
-.header-right .nav.nav-gift {
-  margin-left: 0;
+.header-right .nav.nav-waibao {
+  margin-left: 0px;
 }
 
 .header-right .nav:hover .nav-sub {
