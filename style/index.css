@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   border-radius: 8px;
-  box-shadow: -5px 5px 5px -4px rgba(0, 0, 0, 0.06), 5px 5px 5px -4px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 .list-item:nth-child(even) {
   margin-left: 24px;
