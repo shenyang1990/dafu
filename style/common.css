@@ -72,14 +72,15 @@ body {
   display: none;
   position: absolute;
   left: 0;
-  top: 105%;
-  padding: 18px 24px;
+  top: 110%;
+  padding: 10px 20px;
   box-sizing: border-box;
   font-size: 14px;
   color: #fff;
   white-space: nowrap;
   background-color: #000;
   border-radius: 8px;
+  margin-left: 5px;
 }
 
 .header-left:hover .tips {
