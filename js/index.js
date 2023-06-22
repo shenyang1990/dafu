@@ -4,7 +4,7 @@ function track(e) {
     const data = {
       name: target.innerHTML
     }
-    LA && LA.track('home_nav_click', data);
+    LA && LA.track &&LA.track('home_nav_click', data);
   }
   
   document.querySelector('.main').addEventListener('click', track, false)
